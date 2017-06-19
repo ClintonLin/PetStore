@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.ruanko.entity">
+    <class name="User">
+        <id name="userId" type="java.lang.Integer">
+            <column name="user_id" />
+            <generator class="identity" />
+        </id>
+        <property name="userName" type="java.lang.String">
+            <column name="user_name" />
+        </property>
+      <property name="passWord" type="java.lang.String">
+            <column name="password" length="20" />
+      </property>
+      <property name="gender" type="java.lang.String">
+            <column name="gender" length="4" />
+      </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="USER" namespace="" extends="struts-default">
+		<action name="user_*" class="userAction" method="{1}">
+			<result name="pagePath">${pagePath}</result>
+		</action>
+	</package>
+	
+</struts>
